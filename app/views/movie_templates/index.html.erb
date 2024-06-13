@@ -106,8 +106,8 @@
 
     <td>
 
-      <% if movie.director != nil %>
-        <%= movie.director %>
+      <% if movie.director.name != nil %>
+        <%= movie.director.name %>
       <% else %>
         Uh oh! We weren't able to find a director for this movie.
       <% end %>
