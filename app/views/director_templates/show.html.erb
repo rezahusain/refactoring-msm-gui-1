@@ -129,8 +129,8 @@
     <th>
     </th>
   </tr>
-
-  <% @the_director.filmography.each do |a_movie| %>
+  <% films = @the_director.filmography.order({ :year => :asc }) %>
+  <% films.each do |a_movie| %>
     <tr>
       <td>
         <%= a_movie.id %>
