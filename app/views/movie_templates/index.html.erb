@@ -105,12 +105,11 @@
     </td>
 
     <td>
-
-      <% if movie.director.name != nil %>
-        <%= movie.director.name %>
+      <% if movie.director.name == nil %>
+         Uh oh! 
       <% else %>
-        Uh oh! We weren't able to find a director for this movie.
-      <% end %>
+        <%= movie.director.name %>
+      <% end%>
     </td>
 
     <td>

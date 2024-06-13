@@ -14,10 +14,10 @@
 #
 class Movie < ApplicationRecord
   def director
-    the_id = self.director_id
+    my_director_id = self.director_id
 
-    matching_directors = Director.where({ :id => the_id })
-        
+    matching_directors = Director.where({ :id => my_director_id })
+    
     the_director = matching_directors.at(0)
 
     return the_director
